@@ -1,0 +1,21 @@
+# MiMo Cost Optimization Config
+conversation:
+  topic_detection:
+    enabled: true
+    recent_messages: 3
+    threshold: 2
+  compression_triggers:
+    max_tokens: 4000
+    warning_threshold: 0.8
+  long_conversation:
+    enabled: true
+    threshold: 20
+    check_interval: 5
+    efficiency_threshold: 0.6
+  manual_new:
+    enabled: true
+    command: /new
+mimo_optimization:
+  daily_budget: 15000000
+  alert_threshold: 0.8
+  monitor_interval: 3600
